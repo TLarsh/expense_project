@@ -21,6 +21,7 @@ class RegisterUserView(generics.CreateAPIView):
             action='create_user',
             changes={'new_user': user.username, 'role': user.role}
         )
+        
 
 class GoogleLoginView(APIView):
     def post(self, request):
